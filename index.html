@@ -3,20 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quick-Picks Procurement Intelligence</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Pharmaceutical Procurement Intelligence Dashboard</title>
 </head>
 <body>
     <header>
-        <h1>Welcome to the Quick-Picks Procurement Intelligence Dashboard</h1>
+        <h1>Pharmaceutical Procurement Intelligence Dashboard</h1>
+        <nav>
+            <input type="text" id="search" placeholder="Search reports...">
+        </nav>
     </header>
     <main>
-        <section>
-            <h2>Dashboard Overview</h2>
-            <p>This is the main dashboard for procurement intelligence.</p>
+        <section id="statistics">
+            <h2>Statistics Summary</h2>
+            <div class="stat">
+                <h3>Total Procurement Amount</h3>
+                <p id="total-amount">$0.00</p>
+            </div>
+            <div class="stat">
+                <h3>Number of Reports</h3>
+                <p id="total-reports">0</p>
+            </div>
+            <div class="stat">
+                <h3>Number of Shortlists</h3>
+                <p id="total-shortlists">0</p>
+            </div>
+        </section>
+        <section id="reports">
+            <h2>Reports</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Report Name</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="report-list">
+                    <!-- Dynamic Report Rows -->
+                </tbody>
+            </table>
+        </section>
+        <section id="shortlists">
+            <h2>Shortlists</h2>
+            <ul id="shortlist-list">
+                <!-- Dynamic Shortlist Items -->
+            </ul>
+        </section>
+        <section id="archives">
+            <h2>Archives</h2>
+            <div id="archive-list">
+                <!-- Dynamic Archive Items -->
+            </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2026 Quick-Picks Procurement Intelligence</p>
+        <p>&copy; 2026 Pharmaceutical Procurement Intelligence Dashboard</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
